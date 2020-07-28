@@ -7,7 +7,13 @@ router.get('/', function(req, res){
 });
 
 router.post('/', function(req, res){
-
+	if(req.body.option == 'My profile')
+	{
+		res.redirect('/employee/myprofile');
+	}
+	else if (req.body.option == 'Update profile') {
+		res.redirect('/employee/updateprofile');
+	}
 });
 
 module.exports = router;

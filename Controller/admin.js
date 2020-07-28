@@ -7,7 +7,13 @@ router.get('/', function(req, res){
 });
 
 router.post('/', function(req, res){
-
+	if(req.body.option == 'Add employee')
+	{
+		res.redirect('/admin/addemployee');
+	}
+	else if (req.body.option == 'All employees list') {
+		res.redirect('/admin/allemployeeslist');
+	}
 });
 
 module.exports = router;

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../css/styleadmin.css">
 		<meta charset="utf-8">
 		<title>Admin</title>
 	</head>
@@ -19,7 +18,7 @@
 		padding: 20px 0 20px 0;
 		}
 
-		.admin button{
+		.admin input[type=submit]{
 		width: 100%;
 		padding: 15px;
 		background-color: #2980B9;
@@ -32,7 +31,7 @@
 		margin-bottom: -20px;
 		}
 
-		.admin button:hover {
+		.admin input[type=submit]:hover {
 			background-color: #154360;
 			color: white;
 		}
@@ -55,8 +54,8 @@
 			<h1>Welcome To Admin Dashboard</h1>
 			<hr class="line">
 			<form action="" method="POST">
-				<button type="button">Add Employee</button>
-        <button type="button">All Employees</button>
+				<input type="submit" name="option" value = "Add employee">
+        <input type="submit" name="option" value = "All employees list">
 				<br><br><br><br>
 				<a href='/logout'>Logout</a>
 			</form>

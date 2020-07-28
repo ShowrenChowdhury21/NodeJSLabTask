@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/delete.css">
+		<meta charset="utf-8">
+		<title>Delete Emoployee</title>
+	</head>
+	<style>
+	.deleteemp {
+		width: 300px;
+		margin: 0 auto;
+		margin-top : 220px;
+		font-family: sans-serif;
+		}
+		.deleteemp h1 {
+		text-align: left;
+		color: #4d4d4d;
+		font-size: 40px;
+		padding: 20px 0 20px 0;
+		}
+
+		.deleteemp [type="submit"] {
+		width: 100%;
+		padding: 15px;
+		background-color: #2980B9;
+		border: 0;
+		box-sizing: border-box;
+		cursor: pointer;
+		font-weight: bold;
+		color: #ffffff;
+		margin-top: 10px;
+		}
+		.deleteemp [type="submit"]:hover{
+		background-color: #154360;
+			color: white;
+		}
+		hr.line {
+			border-top: 1.5px solid #2980B9;
+		margin-bottom: 20px;
+		margin-top: -40px;
+		}
+
+
+		.cancelbtn, .deletebtn {
+		float: left;
+		width: 45%;
+		padding: 15px;
+		}
+
+		.cancelbtn {
+		background-color: #ccc;
+		color: black;
+		margin-right: 10px;
+		}
+
+		.deletebtn {
+		background-color: #2980B9;
+		margin-left: 10px;
+		}
+
+		.container {
+		padding: 16px;
+		text-align: center;
+		}
+
+		.modal {
+		display: hidden;
+		position: fixed;
+		z-index: 1;
+		margin: 100px;
+		width: 30%;
+		height: 25%;
+		background-color: transparent;
+		}
+
+		.modal-content {
+		background-color: #fefefe;
+		margin: 5% auto 15% auto;
+		border: 1px solid #888;
+		width: 80%;
+		}
+
+
+		.close {
+		position: absolute;
+		right: 35px;
+		top: 15px;
+		margin-right: 15px;
+		font-size: 40px;
+		font-weight: bold;
+		color: black;
+		}
+
+		.close:hover,
+		.close:focus {
+		color: #2980B9;
+		cursor: pointer;
+		}
+
+		.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+		}
+
+		@media screen and (max-width: 300px) {
+		.cancelbtn, .deletebtn {
+			 width: 100%;
+		}
+		}
+	</style>
+	<body>
+		<div class="deleteemp">
+			<h1>Delete Employee</h1>
+			<hr class="line">
+      <form action="" method="POST">
+          <lebel style="font-size: 15px;">Employee ID: <span style="font-size: 20px;">5154226</span></lebel><br>
+          <lebel style="font-size: 15px;">Employee Name: <span style="font-size: 26px;">Thomas Herdy</span></lebel><br><br>
+          <hr>
+          <input class="deletebtn" onclick="confirmdelete()" value="Delete">
+      </form>
+    </div>
+	</body>
+</html>
+
+<script>
+function confirmdelete(){
+  var r = confirm("Are you sure you want to remove this employee?");
+  if (r == true) {
+    alert("Successfully Deleted")
+  } else {
+  }
+}
+</script>
